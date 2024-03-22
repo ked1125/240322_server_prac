@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let myCalc = new Promise(function (resolve, reject) {
+      //     setTimeout(function () {
+      //       resolve();
+      //     }, 3000);
+      //   });
+      //   //   성공했다는 값을 콘솔창에서 3초 뒤에 출력해줌 . . .
+
+      //   myCalc
+      //     .then(function () {
+      //       console.log("성공입니다.");
+      //     })
+      //     .catch(function () {
+      //       console.log("실패입니다.");
+      //     });
+
+      //   async function fn() {
+      //     return "홍길동";
+      //   }
+
+      //   fn()
+      //     .then(function (num) {
+      //       console.log("하이하이" + num);
+      //     })
+      //     .catch(function fn() {
+      //       console.log("실패" + num);
+      //     });
+
+      async function fn1() {
+        let myFn = new Promise(function (resolve, reject) {
+          resolve(100);
+        });
+
+        let result = await myFn;
+        console.log(result);
+
+        // myFn
+        //   .then(function () {
+        //     console.log("성공!");
+        //   })
+        //   .catch(function () {});
+      }
+
+      fn1();
+    </script>
+  </body>
+</html>
